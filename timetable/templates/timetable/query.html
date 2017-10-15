@@ -1,0 +1,16 @@
+
+<h1>Enter the slot and day to find your class</h1>
+<form action="{% url timetable:result  day %}">
+	{%  csrf_token %}
+	<label>
+		<h2>Enter Day</h2>
+	</label>
+	<input type="number"  name="day"  min="1" max="5" id="day"><br>
+	<!--><label>
+		<h2>Enter Slot</h2>
+	</label>
+	<input type="number"  name="slot"  min="1" max="2" id="slot"><br>
+	<!-->
+	<input type="submit" value="submit">	
+</form>
+

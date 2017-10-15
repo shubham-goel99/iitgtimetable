@@ -1,0 +1,12 @@
+<form action="{% url 'timetable:timetables' %}">
+    <label>	
+		{% if pk %}
+			<center><h2>You have the class of subject {{day}}</h2></center><br>
+			<h2>To check  another class Press the Button </h2>
+			<input type="submit" value="Check another Class">
+		{% else %}
+			<h2>Enter the class</h2>
+			<input type="submit" value="Check another Class">
+		{% endif %}	
+    </label>
+</form>
